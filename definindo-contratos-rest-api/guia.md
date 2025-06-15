@@ -37,7 +37,7 @@ Quando fazemos APIs pensando primeiro no contrato (contract first), trazemos um 
 
 O propósito deste guia é trazer em caráter introdutório como é o processo de entender o negócio e montar um contrato de REST API.
 
-> Após a leitura deste guia, recomendo a leitura do [Guia de Design REST](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md) que aprofunda bem em alguns conceitos e serve como material de referência. 
+> Após a leitura deste guia, recomendo a leitura do [Guia de Design REST](https://github.com/cleitonferreira/blog/blob/main/design-rest-api/guia.md) que aprofunda bem em alguns conceitos e serve como material de referência. 
 
 ## APIs
 
@@ -81,7 +81,7 @@ O REST enfatiza::
 
 A maioria dos softwares nos quais nós interagimos são construídos para atender às necessidades humanas e normalmente referenciam as "coisas" reais das quais esses softwares tratam. Por exemplo, um software de biblioteca vai representar livros, seções, autores etc. e, através de alguma interface, permitir que um usuário interaja com estas representações. Uma API difere-se deste tipo de software no que tange o usuário: quem interage com o software é outro software, não diretamente o usuário final. No entanto, quem desenvolve o software que interage com a API é um programador e para que a experiência deste programador e do usuário do software que ele desenvolve seja a melhor possível, princípios de design devem ser respeitados.
 
-O assunto que será abordado no próximo capítulo é sobre **como definir os contratos das APIs**. Não entrarei em conceitos avançados de REST, arquitetura REST (camadas), implementação do código fonte, autenticação, entre outros assuntos que permeiam a integração via REST pelo simples fato de que eles já estão muito bem documentados na web. Alguns conceitos serão brevemente explicados para permitir que o processo de definição do contrato seja entendido e conceitos específicos de design pode ser aprofundados neste material: [Design de REST API](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md).
+O assunto que será abordado no próximo capítulo é sobre **como definir os contratos das APIs**. Não entrarei em conceitos avançados de REST, arquitetura REST (camadas), implementação do código fonte, autenticação, entre outros assuntos que permeiam a integração via REST pelo simples fato de que eles já estão muito bem documentados na web. Alguns conceitos serão brevemente explicados para permitir que o processo de definição do contrato seja entendido e conceitos específicos de design pode ser aprofundados neste material: [Design de REST API](https://github.com/cleitonferreira/blog/blob/main/design-rest-api/guia.md).
 
 ## Entendendo e representando o negócio
 
@@ -93,7 +93,7 @@ O DDD fornece um conjunto de recursos e padrões que ajudam a documentar e model
 
 O Domain Model é uma representação de conceitos do mundo real (do negócio) que são pertinentes ao um ou mais domínios a serem trabalhados em um software. Estes conceitos incluem as entidades e as relações entre elas. No entanto, não faz parte de um Domain Model implementações técnicas como banco de dados ou componentes específicos de software.
 
-![Exemplo de um Domain Model suficiente para começar a definir APIs](https://github.com/cleitonferreira/blog/blob/master/definindo-contratos-rest-api/resources/exemplo-domain-model.png?raw=true)
+![Exemplo de um Domain Model suficiente para começar a definir APIs](https://github.com/cleitonferreira/blog/blob/main/definindo-contratos-rest-api/resources/exemplo-domain-model.png?raw=true)
 
 <sub>Exemplo de um Domain Model suficiente para começar a definir APIs</sub>
 
@@ -134,7 +134,7 @@ O que não "tem cara" de ser entidade:
 
 Tendo entendido este conceito de entidade, podemos fazer um primeiro desenho sobre o negócio de cartões representando as principais entidades. Para esse exemplo, usei um caso semelhante ao real em ambiente bancário. As soluções deste guia são para fins didáticos, então vamos chegar em um resultado próximo ao real, mas simplificado.
 
-![Domain Model Simplificado de Cartões](https://github.com/cleitonferreira/blog/blob/master/definindo-contratos-rest-api/resources/domain-model-1.png?raw=true)
+![Domain Model Simplificado de Cartões](https://github.com/cleitonferreira/blog/blob/main/definindo-contratos-rest-api/resources/domain-model-1.png?raw=true)
 
 <sub>Domain Model Simplificado de Cartões.</sub>
 
@@ -175,7 +175,7 @@ O que "não tem cara" de ser serviço:
 - Recursos que têm ID e são armazenados em banco de dados.
 - Substantivos.
 
-![Domain Model Simplificado de Cartões](https://github.com/cleitonferreira/blog/blob/master/definindo-contratos-rest-api/resources/domain-model-2.png?raw=true)
+![Domain Model Simplificado de Cartões](https://github.com/cleitonferreira/blog/blob/main/definindo-contratos-rest-api/resources/domain-model-2.png?raw=true)
 
 <sub>Domain Model de Cartões com alguns serviços.</sub>
 
@@ -183,7 +183,7 @@ Agora, precisamos pensar em dividir os assuntos que estamos trabalhando. Mesmo o
 
 No modelo abaixo, separamos os assuntos de cartões de outros assuntos que fazem parte do banco, mas não diretamente do negócio de cartões. Por vezes, este recorte será relacionado aos domínios, subdomínios e/ou grupos funcionais, outras vezes será um produto específico.
 
-![Domain Model Simplificado de Cartões](https://github.com/cleitonferreira/blog/blob/master/definindo-contratos-rest-api/resources/domain-model-3.png?raw=true)
+![Domain Model Simplificado de Cartões](https://github.com/cleitonferreira/blog/blob/main/definindo-contratos-rest-api/resources/domain-model-3.png?raw=true)
 
 <sub>Domain Model de Cartões com bounded contexts.</sub>
 

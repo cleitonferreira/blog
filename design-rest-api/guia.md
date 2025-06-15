@@ -541,7 +541,7 @@ https://www.uuidgenerator.net/
 
 O Correlation ID também é útil para ser lançado na tela de erro. Por exemplo, como apresentado nesta tela do Office 365:
 
-![Imagem exibindo um erro no Office 365 com o Correlation ID](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/resources/office365errorscreen.png?raw=true)
+![Imagem exibindo um erro no Office 365 com o Correlation ID](https://github.com/cleitonferreira/blog/blob/main/design-rest-api/resources/office365errorscreen.png?raw=true)
 
 _Com o Correlation Id, é possível buscar nas bases de log a exata transação que estava acontecendo no momento do erro._
 
@@ -2394,4 +2394,4 @@ A busca deve ser sempre em buscar o RESTful, no entanto, no meio do caminho vai 
 
 Alguns destes padrões que abandonamos podem não fazer falta e não fará o desenvolvedor passar vergonha ao dizer que fez uma API REST, mas não implementou o HTTP Status Code A ou B; ou talvez não implementou HATEOAS em todas as APIs; ou não implementou paginação em alguma delas. No entanto, alguns anti-patterns são praticamente inadimissíveis, como usar somente o verbo POST para resolver todos os problemas; ignorar os comportamentos de idempotência e segurança; limitar a resposta a 200 para Ok e 500 para todo o resto sem nenhum detalhe adicional ... enfim, o recado é que busquem sempre entregar o melhor contrato possível.
 
-E com a prática, percebe-se que tudo isso aqui é muito simples, pois é técnico, é mais "preto no branco". O real desafio estará em modelar o negócio, entender como ele é e representá-lo bem através de URLs e Atributos e isso você encontra nesse [guia](https://github.com/cleitonferreira/blog/blob/master/definindo-contratos-rest-api/guia.md).
+E com a prática, percebe-se que tudo isso aqui é muito simples, pois é técnico, é mais "preto no branco". O real desafio estará em modelar o negócio, entender como ele é e representá-lo bem através de URLs e Atributos e isso você encontra nesse [guia](https://github.com/cleitonferreira/blog/blob/main/definindo-contratos-rest-api/guia.md).

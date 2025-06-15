@@ -9,5 +9,5 @@ Os dois guias que já escrevi sobre REST APIs são focados em contrato e modelag
 No guia visual abaixo você terá uma visão bem básica sobre o universo de REST APIs, no entanto, de forma rápida, passa pela maioria dos conceitos. O material é usado como apoio em treinamentos, por isso, nem tudo se explica sozinho, mas é o ideal se você só tem 10 minutinhos pra absorver alguma coisa sobre REST APIs.
 
 <center>
-<a href="https://github.com/cleitonferreira/blog/raw/master/guia-visual/GuiaRapidoRestAPI.pdf"><img src="https://github.com/cleitonferreira/blog/raw/master/guia-visual/00-capa.png" width="300" height="400" /></a>
+<a href="https://github.com/cleitonferreira/blog/raw/main/guia-visual/GuiaRapidoRestAPI.pdf"><img src="https://github.com/cleitonferreira/blog/raw/main/guia-visual/00-capa.png" width="300" height="400" /></a>
 </center>

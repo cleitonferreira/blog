@@ -31,7 +31,7 @@ Com base no quadro acima, podemos observar alguns pontos:
 
 #### **Preferência por path parameter e query parameter**
 
-Apesar de ter buscado por APIs diversas, nenhuma delas optou pelo versionamento via [host](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md#versionamento-pelo-host) ou [header](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md#versionamento-por-header-customizado). O Vimeo foi o único a adotar a abordagem com [content-type](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md#versionamento-pelo-content-type-com-o-header-accept). A preferência geral foi por utilizar path parameter (na estrutura da URL) ou passar como query parameter.
+Apesar de ter buscado por APIs diversas, nenhuma delas optou pelo versionamento via [host](https://github.com/cleitonferreira/blog/blob/main/design-rest-api/guia.md#versionamento-pelo-host) ou [header](https://github.com/cleitonferreira/blog/blob/main/design-rest-api/guia.md#versionamento-por-header-customizado). O Vimeo foi o único a adotar a abordagem com [content-type](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md#versionamento-pelo-content-type-com-o-header-accept). A preferência geral foi por utilizar path parameter (na estrutura da URL) ou passar como query parameter.
 
 #### **Foram utilizadas Major somente, Major.Minor e datas**
 
@@ -47,7 +47,7 @@ Apesar de menos frequente, algumas strings de versionamento endereçam builds re
 
 ### E o Oscar vai para "versão MAJOR na URL"
 
-Quando falamos [versionamento semântico](https://github.com/cleitonferreira/blog/blob/master/design-rest-api/guia.md#versionamento), alterações em Minor e Path não devem fazer com que quem já consome a versão tenha qualquer problema por quebra de contrato, ou seja, nenhum campo não obrigatório passa a ser obrigatório e nenhum campo é removido. Neste tipo de alteração, são apenas adicionados novos campos ou feitas alterações em metadados. Assim, pequenas evoluções podem ser feitas na API e notificadas aos desenvolvedores, no entanto, sem demandar que atualizações sejam obrigatoriamente feitas nos seus clientes.
+Quando falamos [versionamento semântico](https://github.com/cleitonferreira/blog/blob/main/design-rest-api/guia.md#versionamento), alterações em Minor e Path não devem fazer com que quem já consome a versão tenha qualquer problema por quebra de contrato, ou seja, nenhum campo não obrigatório passa a ser obrigatório e nenhum campo é removido. Neste tipo de alteração, são apenas adicionados novos campos ou feitas alterações em metadados. Assim, pequenas evoluções podem ser feitas na API e notificadas aos desenvolvedores, no entanto, sem demandar que atualizações sejam obrigatoriamente feitas nos seus clientes.
 
 Entendo que clientes que venham a "quebrar" por conta da adição de novos campos, provavelmente fizeram o consumo da API de forma atípica, pra não falar errada, talvez, processando manualmente o payload e buscando os campos por posição, por exemplo.  Martin Fawler em [TolerantReader](https://martinfowler.com/bliki/TolerantReader.html) reforça conceitos do comportamento que é esperado de um consumidor de serviços.
 
